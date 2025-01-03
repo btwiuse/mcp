@@ -1,0 +1,32 @@
+{
+  "allowDevTools": true,
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/apple/Desktop",
+        "/Users/apple/Downloads"
+      ]
+    },
+    "time": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-time",
+        "--local-timezone",
+        "Asia/Shanghai"
+      ]
+    },
+    "ts-time": {
+      "command": "node",
+      "args": [
+        "/Users/apple/mcp-servers/src/time/dist/index.js"
+      ]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    }
+  }
+}
